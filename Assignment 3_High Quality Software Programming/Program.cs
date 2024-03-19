@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment_3_High_Quality_Software_Programmning
-
+namespace Assignment_3_vehicle
 {
+    using Assignment_3_vehicle;
 
     public class Program
     {
         public static void Main(string[] args)
         {
             // Create instances of vehicles
-            Vehicle car = new Car("Elantra", "Hyndai", 2024, 55, 6, "Gasoline", "Automatic", false);
-            Vehicle truck = new Truck("RAV -40", "Ford", 2020, 100, 3, "Pickup", true);
-            Vehicle motorcycle = new Motorcycle("Bullet", "Royal Enfield", 2019, 80, 1000, "Gasoline", true);
+            Vehicle car = new Car("Civic", "Honda", 2020, 50, 5, "Gasoline", "Automatic", false);
+            Vehicle truck = new Truck("F-150", "Ford", 2018, 100, 3, "Pickup", true);
+            Vehicle motorcycle = new Motorcycle("Ninja", "Kawasaki", 2019, 80, 1000, "Gasoline", true);
 
             // Display details of vehicles
             Console.WriteLine("Car Details:");
