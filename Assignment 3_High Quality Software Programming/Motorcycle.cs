@@ -1,24 +1,31 @@
-﻿namespace Assignment_3_High_Quality_Software_Programmning
-{
-    internal class Motorcycle : Vehicle
-    {
-        private string v1;
-        private string v2;
-        private int v3;
-        private int v4;
-        private int v5;
-        private string v6;
-        private bool v7;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-        public Motorcycle(string v1, string v2, int v3, int v4, int v5, string v6, bool v7)
+namespace Assignment_3_vehicle
+{
+    public class Motorcycle : Vehicle
+    {
+        public int EngineCapacity { get; set; }
+        public string FuelType { get; set; }
+        public bool HasFairing { get; set; }
+
+        public Motorcycle(string model, string manufacturer, int year, decimal rentalPrice, int engineCapacity, string fuelType, bool hasFairing)
+            : base(model, manufacturer, year, rentalPrice)
         {
-            this.v1 = v1;
-            this.v2 = v2;
-            this.v3 = v3;
-            this.v4 = v4;
-            this.v5 = v5;
-            this.v6 = v6;
-            this.v7 = v7;
+            EngineCapacity = engineCapacity;
+            FuelType = fuelType;
+            HasFairing = hasFairing;
+        }
+
+        public override void DisplayDetails()
+        {
+            base.DisplayDetails();
+            Console.WriteLine($"Engine Capacity: {EngineCapacity}");
+            Console.WriteLine($"Fuel Type: {FuelType}");
+            Console.WriteLine($"Has Fairing: {HasFairing}");
         }
     }
 }
