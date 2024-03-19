@@ -26,8 +26,8 @@ namespace Assignment_3_vehicle
         {
             base.DisplayDetails();
             Console.WriteLine($"Seats: {Seats}");
-            Console.WriteLine($"Engine Type: {EngineType}");
-            Console.WriteLine($"Transmission: {Transmission}");
+            Console.WriteLine($"The Engine Type: {EngineType}");
+            Console.WriteLine($"Transmission of car: {Transmission}");
             Console.WriteLine($"Convertible: {Convertible}");
         }
     }
