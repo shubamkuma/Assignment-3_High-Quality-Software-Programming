@@ -13,9 +13,9 @@ namespace Assignment_3_vehicle
         public static void Main(string[] args)
         {
             // Create instances of vehicles
-            Vehicle car = new Car("Civic", "Honda", 2020, 50, 5, "Gasoline", "Automatic", false);
-            Vehicle truck = new Truck("F-150", "Ford", 2018, 100, 3, "Pickup", true);
-            Vehicle motorcycle = new Motorcycle("Ninja", "Kawasaki", 2019, 80, 1000, "Gasoline", true);
+            Vehicle car = new Car("Lexus A50", "Lexus", 2023, 49, 5, "Gasoline", "Manual", false);
+            Vehicle truck = new Truck("RAV-40", "Ford", 2022, 100, 6, "Pickup", true);
+            Vehicle motorcycle = new Motorcycle("Harley 350", "Harley Davidson", 2017, 80, 1000, "Gasoline", true);
 
             // Display details of vehicles
             Console.WriteLine("Car Details:");

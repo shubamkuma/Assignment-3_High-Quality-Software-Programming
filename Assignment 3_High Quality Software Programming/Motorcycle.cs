@@ -23,7 +23,7 @@ namespace Assignment_3_vehicle
         public override void DisplayDetails()
         {
             base.DisplayDetails();
-            Console.WriteLine($"Engine Capacity: {EngineCapacity}");
+            Console.WriteLine($"Engine Capacity is: {EngineCapacity}");
             Console.WriteLine($"Fuel Type: {FuelType}");
             Console.WriteLine($"Has Fairing: {HasFairing}");
         }
