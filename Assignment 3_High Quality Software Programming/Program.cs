@@ -39,7 +39,7 @@ namespace Assignment_3_vehicle
             agency.RentVehicle(car);
 
             // Display total revenue
-            Console.WriteLine($"\nTotal Revenue: {agency.TotalRevenue:C}");
+            Console.WriteLine($"\nTotal Revenue: ${agency.TotalRevenue}");
         }
     }
 }
